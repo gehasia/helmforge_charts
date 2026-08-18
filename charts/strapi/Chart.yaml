@@ -3,7 +3,7 @@ apiVersion: v2
 name: strapi
 description: Strapi headless CMS with SQLite, MySQL, or PostgreSQL support, uploads persistence, and S3 backups
 type: application
-version: 2.3.12
+version: 2.3.13
 appVersion: "5.52.0"
 kubeVersion: ">=1.26.0-0"
 maintainers:
@@ -24,7 +24,7 @@ icon: https://helmforge.dev/icons/charts/strapi.png
 annotations:
   artifacthub.io/changes: |
     - kind: changed
-      description: "refresh upstream images and dependencies (#978)"
+      description: "bump HelmForge subchart dependencies to latest minor/patch (#1011)"
   artifacthub.io/maintainers: |
     - name: HelmForge
       email: berlofa@helmforge.dev
@@ -49,7 +49,7 @@ annotations:
       url: https://github.com/helmforgedev/charts/issues
 dependencies:
   - name: postgresql
-    version: 2.0.4
+    version: 2.0.5
     repository: oci://ghcr.io/helmforgedev/helm
     condition: postgresql.enabled
   - name: mysql
