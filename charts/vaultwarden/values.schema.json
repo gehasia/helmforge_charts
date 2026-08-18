@@ -516,18 +516,18 @@
 			  "description": "Can be Recreate or RollingUpdate",
 			  "enum": ["RollingUpdate", "Recreate"],
               "default": "RollingUpdate"
-	        }
-		  }
-	    },
-		"rollingUpdate": {
-          "type": "object",
-		  "description": "If deployment.strategy.type is RollingUpdate, you can set maxSurge and maxUnavailable",
-          "properties": {
-            "maxSurge": {
-			  "type": "string"
 	        },
-			"maxUnavailable": {
-			  "type": "string"
+			"rollingUpdate": {
+              "type": "object",
+		      "description": "If deployment.strategy.type is RollingUpdate, you can set maxSurge and maxUnavailable",
+              "properties": {
+                "maxSurge": {
+		          "type": "string"
+	            },
+			    "maxUnavailable": {
+			      "type": "string"
+	            }
+		      }
 	        }
 		  }
 	    }

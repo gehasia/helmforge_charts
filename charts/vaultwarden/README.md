@@ -282,7 +282,9 @@ Official reference:
 | `ingress.ingressClassName` | Ingress class name | `traefik` |
 | `networkPolicy.enabled` | Enable NetworkPolicy rendering | `false` |
 | `resources` | Pod resources | `{}` |
-| `deployment.strategy.type` | Change deployment strategy type. Could be RollingUpdate or Recreate | `RollingUpdate` |
+| `deployment.strategy.type` | Select the deployment strategy type. Could be RollingUpdate or Recreate | `RollingUpdate` |
+| `deployment.strategy.rollingUpdate.maxSurge` | Set the maxSurge for RollingUpdate strategy | `25%` |
+| `deployment.strategy.rollingUpdate.maxUnavailable` | Set the maxUnavailable for RollingUpdate strategy | `25%` |
 
 ## CI scenarios
 
