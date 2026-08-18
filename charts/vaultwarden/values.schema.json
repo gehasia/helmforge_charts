@@ -522,10 +522,10 @@
 		      "description": "If deployment.strategy.type is RollingUpdate, you can set maxSurge and maxUnavailable",
               "properties": {
                 "maxSurge": {
-		          "type": "string"
+		          "type": ["string", "integer"]
 	            },
 			    "maxUnavailable": {
-			      "type": "string"
+			      "type": ["string", "integer"]
 	            }
 		      }
 	        }
